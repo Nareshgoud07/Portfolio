@@ -1,0 +1,149 @@
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content:center; 
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: static;
+  z-index: 10;
+}
+
+.logo {
+  max-height: 130px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  z-index: 10;
+}
+
+nav ul li {
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: #1d1d24;
+  position: relative;
+  padding: 5px 0;
+}
+
+nav ul li a:hover {
+  color: #fd4766;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #fd4766;
+  transition: 0.3s;
+  bottom: 0;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.btn {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background: #fd4766;
+  border: 2px solid #fd4766;
+  text-align: center;
+  max-width: fit-content;
+}
+
+.btn:hover {
+  background: transparent;
+  border-color: #fd4766;
+  color: #fd4766;
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+    position: static;
+    z-index: 10;
+    width: 132%;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 100;
+  }
+
+  nav ul.active {
+    display: block;
+  }
+
+  .menu-icon {
+    display: block;
+    z-index: 10;
+    z-index: 100;
+  }
+
+  .menu-icon-bars {
+    display: block;
+  }
+
+  .menu-icon-times {
+    display: none;
+  }
+
+  nav ul.active .menu-icon-bars {
+    display: none;
+  }
+
+  nav ul.active .menu-icon-times {
+    display: block;
+  }
+
+  nav ul.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav ul li {
+    padding: 10px;
+  }
+ 
+  .logo {
+    margin-right: auto;
+  }
+
+  .btn {
+    margin-left: auto; 
+  }
+}

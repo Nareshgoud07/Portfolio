@@ -1,0 +1,105 @@
+.contact-container {
+  padding: 50px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+}
+
+.contact-box h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.contact-info .social-media {
+  margin-top: 20px;
+}
+
+.contact-info .social-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info .social-media li {
+  margin: 10px 0;
+}
+
+.contact-info .social-media a {
+  font-size: 18px;
+  color: #fd4766;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info .social-media a:hover {
+  color: #1c99fe;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.input-group textarea {
+  resize: vertical;
+}
+
+.btn {
+  color: #fff;
+  font-size: 16px;
+  background-color: #fd4766;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #1c99fe;
+}
+
+
+.social-media {
+  margin-top: 29px;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+
+}
+
+.social-icons a {
+  margin: 0 15px;
+}
